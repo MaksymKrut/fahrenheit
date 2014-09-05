@@ -1,0 +1,46 @@
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:weightSum="3"
+        android:background="#ffff9322"
+        android:id="@+id/coloringLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="80sp"
+        android:inputType="number"
+        android:ems="10"
+        android:text="-40"
+        android:id="@+id/celsValueField"
+        android:layout_gravity="left|center_vertical" />
+
+
+    <com.kribel.fahrenheit.VerticalSeekBar
+        android:id="@+id/degreeSeekBar"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="210dp"
+        android:layout_height="400dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="80sp"
+        android:inputType="number"
+        android:ems="10"
+        android:text="-40"
+        android:id="@+id/fahrValueField"
+        android:layout_gravity="left|center_vertical" />
+
+
+</LinearLayout><!-- From: file:/C:/Users/Maxim/AndroidStudioProjects/FahrenheitProject/Fahrenheit/src/main/res/layout/activity_main.xml -->
