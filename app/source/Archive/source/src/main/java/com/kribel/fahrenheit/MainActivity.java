@@ -1,14 +1,13 @@
-package com.softalp.converter;
+package com.kribel.fahrenheit;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.app.Activity;
 import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
+public class MainActivity extends Activity implements OnSeekBarChangeListener {
 
-public class MyActivity extends ActionBarActivity implements SeekBar.OnSeekBarChangeListener {
     TextView celcOutputField;
     SeekBar degreeBar, degreeBarVertical;
     TextView fahrOutputField;
@@ -18,7 +17,7 @@ public class MyActivity extends ActionBarActivity implements SeekBar.OnSeekBarCh
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_main);
 
         celcOutputField = (TextView) findViewById(R.id.celsValueField);
         fahrOutputField = (TextView) findViewById(R.id.fahrValueField);
